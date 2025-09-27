@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("Fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Masque";
+    src: url("Fonts/MASQUE__.ttf");
+}
+
+* {
+    font-family: "Quicksand";
+    font-size: 15px;
+}
+
+.b1 {
+    background-image: url("resources/b1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 {
+    background-image: url("resources/b2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 {
+    background-image: url("resources/b3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s {
+    background-image: url("resources/s1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoryBox1 {
+    background-image: url("resources/category/Tennis1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoryBox2 {
+    background-image: url("resources/category/Gymnastic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoryBox3 {
+    background-image: url("resources/category/Cycling1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoryBox4 {
+    background-image: url("resources/category/Running1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.categoryBox1:hover,
+.categoryBox2:hover,
+.categoryBox3:hover,
+.categoryBox4:hover {
+    transition-duration: 0.5s;
+    scale: 1.05;
+}
+
+.optionBox {
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0;
+    height: 40px;
+}
+
+.viewOptionBox:hover .optionBox {
+    animation: view;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.pimg:hover {
+    opacity: 0.3;
+}
+
+@keyframes view {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    50% {}
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.newItem:hover {
+    scale: 1.05;
+}
+
+.shopBg{
+    background-image: url("resources/athletex-sport-shop-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+
+/* range */
+.range-slider {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FF4500; /* Orange color */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF; /* White border */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #FF4500; /* Orange color */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF; /* White border */
+}
+
+.range-values {
+    display: flex;
+    justify-content: space-between;
+}
